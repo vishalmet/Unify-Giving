@@ -14,6 +14,10 @@ const MintNFT = () => {
         ...prevState,
         [name]: value,
         }));
+        setFrom((prevState) => ({
+        ...prevState,
+        [name]: value,
+        }));
     };
 
   return (
@@ -24,7 +28,7 @@ const MintNFT = () => {
       <div className=" pt-8">
         <Navbar />
         <div className=" pt-16">
-          <p className=" text-5xl mx-1 md:mx-0 flex justify-center font-semibold">
+          <p className=" text-3xl md:text-5xl mx-3 md:mx-0 flex justify-center font-semibold">
             {" "}
             Get Your Early Contributor NFT Now!
           </p>
@@ -33,7 +37,7 @@ const MintNFT = () => {
             features while helping those experiencing homelessness through Unify
             Giving
           </p>
-          <div className="">
+          <div className=" mx-2 md:mx-0">
             <div className=" flex justify-center">
                 <h1 className="text-gray-900 md:w-[60%] lg:w-[45%] text-xl pt-10">
                 Enter your name
@@ -53,16 +57,16 @@ const MintNFT = () => {
                 Where are you from?
                 <input
                     type="text"
-                    className="p-4 mt-3 w-full rounded-3xl text-xl text-black bg-transparent border-2 border-gray-900 focus:border-emerald-400 focus:outline-none focus:ring-0 peer"
+                    className="p-4 mt-3 w-full rounded-3xl text-xl text-black bg-transparent border-2 border-gray-900 focus:border-purple-700 focus:outline-none"
                     placeholder=""
                     required
                     name="From"
-                    value={name.From}
+                    value={from.From}
                     onChange={handleChange}
                 />
                 </h1>
             </div>
-            <div className=" flex justify-center pt-6">
+            <div className=" flex justify-center text-base md:text-xl font-semibold pt-6">
                 <Link to='/minted' className='hover:cursor-pointer border p-4 px-8 text-white rounded-full transition-transform hover:scale-95 ease-in-out hover:shadow-2xl' style={{ backgroundColor: '#6200EE' }}> Mint Now 🡥 </Link>
             </div>
           </div>

@@ -20,7 +20,7 @@ const Navbar = () => {
             alt=""
           />
         </Link>
-        <ul className="flex justify-center font-medium text-base space-x-6 ">
+        <ul className="hidden md:flex justify-center font-medium text-base space-x-6 ">
           <li className="hover:cursor-pointer border border-gray-400 p-2 rounded-full transition-transform hover:scale-95 ease-in-out">
             <Link
               to="/"
