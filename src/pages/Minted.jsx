@@ -13,8 +13,8 @@ const Minted = () => {
       <div className=" pt-8">
         <Navbar />
         <div className=" pt-16">
-            <p className=" text-5xl flex justify-center font-semibold"> Congratulations on Minting Your NFT! 🚀</p>
-            <div className=" flex justify-center">
+            <p className=" text-4xl lg:text-5xl flex justify-center font-semibold"> Congratulations on Minting Your NFT! 🚀</p>
+            <div className=" flex justify-center pt-2">
                 <img src={MintedImg} className=" h-96" alt="" />
             </div>
             <div className=" flex justify-center pt-10  text-xl font-semibold space-x-10">
