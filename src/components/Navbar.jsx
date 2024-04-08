@@ -11,15 +11,15 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-transparent border border-gray-900 rounded-full mx-32 bricolage-font">
+    <div className="bg-transparent border border-gray-900 rounded-full mx-1 md:mx-10 lg:mx-32 flex-wrap bricolage-font">
       <div className="flex items-center p-4 mx-3 text-gray-900 text-xl justify-between">
-        <a to="/">
+        <Link to="/">
           <img
-            className=" h-12 hover:scale-105 hover:cursor-pointer"
+            className=" h-12 hover:scale-95 hover:cursor-pointer"
             src={NavLogo}
             alt=""
           />
-        </a>
+        </Link>
         <ul className="flex justify-center font-medium text-base space-x-6 ">
           <li className="hover:cursor-pointer border border-gray-400 p-2 rounded-full transition-transform hover:scale-95 ease-in-out">
             <Link
