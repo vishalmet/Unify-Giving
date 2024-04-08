@@ -18,24 +18,24 @@ const MintNFT = () => {
 
   return (
     <div
-      className=" h-screen bg-cover bricolage-font pb-6"
+      className=" h-screen bg-cover bg-center bricolage-font pb-6"
       style={{ backgroundImage: `url(${Bg})` }}
     >
       <div className=" pt-8">
         <Navbar />
         <div className=" pt-16">
-          <p className=" text-5xl flex justify-center font-semibold">
+          <p className=" text-5xl mx-1 md:mx-0 flex justify-center font-semibold">
             {" "}
             Get Your Early Contributor NFT Now!
           </p>
-          <p className=" text-xl text-gray-900 flex justify-center mx-[26%] pt-6 text-center">
+          <p className=" text-xl text-gray-900 flex justify-center mx-[2%] md:mx-[16%] lg:mx-[26%] pt-6 text-center">
             Mint your exclusive NFT, be an early supporter, and unlock special
             features while helping those experiencing homelessness through Unify
             Giving
           </p>
           <div className="">
             <div className=" flex justify-center">
-                <h1 className="text-gray-900 w-[45%] text-xl pt-10">
+                <h1 className="text-gray-900 md:w-[60%] lg:w-[45%] text-xl pt-10">
                 Enter your name
                 <input
                     type="text"
@@ -49,7 +49,7 @@ const MintNFT = () => {
                 </h1>
             </div>
             <div className=" flex justify-center">
-                <h1 className="text-gray-900 w-[45%] text-xl pt-6">
+                <h1 className="text-gray-900 md:w-[60%] lg:w-[45%] text-xl pt-6">
                 Where are you from?
                 <input
                     type="text"
@@ -63,7 +63,7 @@ const MintNFT = () => {
                 </h1>
             </div>
             <div className=" flex justify-center pt-6">
-                <Link to='/minted' className='hover:cursor-pointer border w-fi p-4 px-8 text-white rounded-full transition-transform hover:scale-95 ease-in-out hover:shadow-2xl' style={{ backgroundColor: '#6200EE' }}> Mint Now 🡥 </Link>
+                <Link to='/minted' className='hover:cursor-pointer border p-4 px-8 text-white rounded-full transition-transform hover:scale-95 ease-in-out hover:shadow-2xl' style={{ backgroundColor: '#6200EE' }}> Mint Now 🡥 </Link>
             </div>
           </div>
         </div>
